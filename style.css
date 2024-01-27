@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: inherit; */
+}
+
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  display: flex;
+  /* justify-content: center; */
+  /* background-color: #60b347; */
+}
+
+.whole{
+  max-width: 680px;
+padding: 0 20px;
+margin: auto;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.head1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.head1 h1{
+  font-size: 28px;
+  margin: 30px 0 18px 0;
+  color: #edff28;
+}
+
+.head1 p{
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.39);
+  /* text-align: center; */
+  line-height: 21px;
+}
+
+.head1 p span {
+  color: #6ecc66;;
+}
+
+
+.head2{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+
+}
+
+
+
+.head2 .number{
+  font-size: 43px;
+  background-color: #ffffff;
+  color: black;
+  padding: 24px 20px 20px 23px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 8;
+  width: 43px;
+}
+
+.head2 .long_line{
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  top: -52px;
+  z-index: 0;
+
+}
+
+.left{
+  display: flex;
+  justify-content: flex-start;
+  align-items:stretch;
+}
+
+
+
+.left input{
+  padding: 15px;
+  font-size: 22px;
+  font-family: 'Press Start 2P', sans-serif;
+  max-width: 150px;
+  margin: 0 20px 0 0;
+}
+
+.left input::placeholder{
+  font-size: 15px;
+}
+
+.left button{
+  padding: 15px;
+  font-family: 'Press Start 2P', sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn.again{
+  padding: 19px;
+  border-style: none;
+  font-size: 16px;
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 20px 0 20px;
+  cursor: pointer;
+}
+.message{
+  font-size: 16px;
+  margin: 2px 0 8px 0;
+}
+
+
+.right{
+  margin: 25px 30px 25px 0;
+  align-self: flex-start;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: #eee 1px solid;
+  padding: 10px;
+  flex-wrap: wrap;
+
+}
+
+.info{
+  font-size: 12px;
+  max-width: 230px;
+  color: #6ecc66;
+}
+
+
+@media screen and (max-width: 420px) {
+  .head1 h1{
+    font-size: 26px;
+  }
+  .whole{
+    padding: 0 10px;
+  }
+}
